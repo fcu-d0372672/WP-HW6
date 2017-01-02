@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
     <title>exercise1</title>
     <!-- 最新編譯和最佳化的 CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -100,7 +102,7 @@
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
-            /*font-style: oblique;*/
+            font-style: oblique;
         }
 
         .scrolling2 {
@@ -121,12 +123,12 @@
 
 <body>
     <section>
-        <div class="scrolling2">
+        <div class="scrolling2 col-sm-6 col-ms-6">
             <div id="attractions"></div>
         </div>
     </section>
     <aside>
-        <div id="map" style="width:520px; height:700px ;">
+        <div id="map" class="col-sm-6 col-ms-6" style="width:520px; height:700px ;">
             <script>
                 mapset();
                 showmap();
